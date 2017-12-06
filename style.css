@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #00AEFF;
+}
+
+.header-content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-left {
+    background-color: #009BDD;
+    height: 50px;
+    flex-basis: 24.2%;
+    align-self: center;
+}
+
+.header-right {
+    background-color: #36C3FF;
+    flex-basis: 24.2%;
+    height: 50px;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+}
+
+nav {
+    flex: 1;
+}
+
+.navigation {
+    background-color: #FF5607;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    height: 640px;
+
+}
+
+.navigation-item {
+    background-color: #E84900;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    height: 30px;
+    margin: 3%;
+    margin-right: 0px;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+.navigation-item:nth-of-type(1) {
+    margin-top: 25px;
+}
+
+section {
+    height: 415px;
+    flex-grow: 3;
+}
+
+.article {
+    display: flex;
+}
+
+.middle-block_orange {
+    background-color: #FFBD00;
+    flex-grow: 1;
+    height: 200px;
+    margin: 25px 12px 10px 10px;
+
+}
+
+.middle-block_right {
+    height: 210px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px 0 10px 5px;
+}
+
+.Line {
+    background-color: #C9C9C9;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.strong {
+    background-color: #9D9D9D;
+    height: 40px;
+
+}
+
+.middle-block_bottom {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #00D169;
+    height: 200px;
+    
+}
+
+.footer-container {
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-block {
+    background-color: #02B15A;
+    height: 160px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.footer-element {
+    background-color: #038042;
+    width: 80%;
+    flex-basis: 25px;
+    margin: 8px auto;
+}
+
+@media screen and (max-width: 1240px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-content {
+        justify-content: space-around;
+    }
+    .middle-block_right,
+    .middle-block_bottom {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .header-content {
+        flex-wrap: wrap;
+        padding: 3px;
+    }
+
+    .header-left {
+        width: 90%;
+        height: 35px;
+        flex-wrap: wrap;
+        flex-basis: inherit;
+    }
+
+    .header-right {
+        width: 90%;
+        height: 35px;
+        flex-wrap: wrap;
+        flex-basis: inherit;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .navigation {
+        height: 70px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navigation-item:nth-child(even) {
+        display: none;
+    }
+
+    .navigation-item {
+        height: 35px;
+        flex-basis: 25%;
+    }
+    .navigation-item:first-child {
+        margin-bottom: 30px;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .article {
+        display: block;
+    }
+
+    .middle-block_orange {
+        margin: 0;
+    }
+
+    .middle-block_right {
+        margin: 10px 10px;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .strong {
+        margin-top: 5px;
+        height: 30px;
+    }
+
+    .footer-element {
+        display: none;
+        width: 40%;
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-element:nth-child(1) {
+        display: block;
+        width: 50%;
+    }
+
+    .footer-container {
+        height: auto;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .block {
+        margin: 15px 10px;
+        height: 40px;
+        width: 90%;
+    }
+
+    footer {
+        height: auto;
+    }
+}
