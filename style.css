@@ -141,7 +141,7 @@ footer {
 .footer-element {
     background-color: #038042;
     width: 80%;
-    flex-basis: 25px;
+    flex-basis: 60%;
     margin: 8px auto;
 }
 
@@ -166,6 +166,14 @@ footer {
         padding: 3px;
     }
 
+ @media (max-width: 375px) {
+    .footer-block {
+        width: 94%;
+    }   
+     
+ 
+    
+    
     .header-left {
         width: 90%;
         height: 35px;
